@@ -1,106 +1,116 @@
-.loginFormContainer {
-    max-width: 420px;
-    margin: 40px auto 128px auto;
+```css
+.welcomePage {
+  min-height: calc(100vh - 80px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 20px;
+  background: #f5f7f4;
 }
 
-.loginTitle {
-    font-weight: normal;
-    font-size: 52px;
-    line-height: 62px;
-    text-align: center;
-    margin-bottom: 36px;
+.welcomeCard {
+  width: 100%;
+  max-width: 430px;
+  padding: 48px 28px 36px;
+  text-align: center;
+  background: #ffffff;
+  border-radius: 24px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+}
+
+.logoPlaceholder {
+  width: 96px;
+  height: 96px;
+  margin: 0 auto 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #1f5c42;
+  color: #ffffff;
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.schoolType {
+  margin: 0 0 10px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  color: #66736b;
+}
+
+.welcomeCard h1 {
+  margin: 0;
+  font-size: 27px;
+  line-height: 1.25;
+  color: #173526;
+}
+
+.divider {
+  width: 50px;
+  height: 2px;
+  margin: 24px auto;
+  background: #c9a84c;
+}
+
+.welcomeCard h2 {
+  margin: 0;
+  font-size: 30px;
+  line-height: 1.2;
+  color: #1f5c42;
 }
 
 .subtitle {
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
-    display: block;
+  margin: 10px 0 32px;
+  color: #6b756f;
+  font-size: 15px;
 }
 
-.loginForm {
-    margin-top: 72px;
+.loginButton {
+  width: 100%;
+  min-height: 54px;
+  border: 0;
+  border-radius: 12px;
+  background: #1f5c42;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
-.loginForm > div:first-child {
-    margin-bottom: 40px;
+.loginButton:hover {
+  opacity: 0.92;
 }
 
-.loginForm > div:nth-child(2) {
-    margin-bottom: 8px;
+.loginButton:active {
+  transform: scale(0.98);
 }
 
-.forgotLink {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 17px;
-    text-transform: uppercase;
-    
-    border-bottom: 1px solid var(--standard-black);
-    padding-bottom: 1px;
+.footerText {
+  margin: 28px 0 0;
+  font-size: 12px;
+  color: #8a938d;
 }
 
-.forgotPasswordContainer {
-    margin-bottom: 40px;
+@media (max-width: 480px) {
+  .welcomePage {
+    min-height: 100vh;
+    padding: 20px 16px;
+  }
+
+  .welcomeCard {
+    padding: 40px 22px 30px;
+    border-radius: 20px;
+  }
+
+  .welcomeCard h1 {
+    font-size: 24px;
+  }
+
+  .welcomeCard h2 {
+    font-size: 27px;
+  }
 }
-
-.createLink {
-    display: block;
-    margin: 48px 0px 16px 0px;
-    text-align: center;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 17px;
-}
-
-.forgotLink:hover {
-    color: var(--standard-gold);
-    border-bottom: 1px solid var(--standard-gold);
-}
-
-.errorContainer {
-    background-color: var(--error);
-    padding: 0px;
-
-    visibility: hidden;
-    opacity: 0;
-    transition: all 0.3s ease-in-out;
-    max-height: 0px;
-}
-
-.errorMessage {
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 19px;
-    color: var(--standard-white);
-    text-align: center;
-    display: block;
-}
-
-.show {
-    visibility: visible;
-    opacity: 1;
-    max-height: unset;
-    padding: 20px 0px;
-}
-
-@media (max-width: 800px) {
-    .root {
-        padding: 0px 16px;
-    }
-
-    .loginTitle {
-        font-size: 32px;
-        line-height: 38px;
-    }
-
-    .subtitle {
-        font-size: 14px;
-        line-height: 17px;
-    }
-
-    .attributeGridContainer {
-        display: none;
-    }
-}
+```
