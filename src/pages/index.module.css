@@ -1,115 +1,116 @@
-.root {
-
+```css
+.welcomePage {
+  min-height: calc(100vh - 80px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 20px;
+  background: #f5f7f4;
 }
 
-.collectionContainer {
-    margin-top: 8px;
+.welcomeCard {
+  width: 100%;
+  max-width: 430px;
+  padding: 48px 28px 36px;
+  text-align: center;
+  background: #ffffff;
+  border-radius: 24px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
 }
 
-.promotionContainer {
-    position: relative;
+.logoPlaceholder {
+  width: 96px;
+  height: 96px;
+  margin: 0 auto 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #1f5c42;
+  color: #ffffff;
+  font-size: 42px;
+  font-weight: 700;
 }
 
-.promotionContainer h2 {
-    font-size: 52px;
-    line-height: 62px;
+.schoolType {
+  margin: 0 0 10px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  color: #66736b;
 }
 
-
-.messageContainer {
-    text-align: center;
-    padding: 60px 0px;
-    margin: 0px 30px;
+.welcomeCard h1 {
+  margin: 0;
+  font-size: 27px;
+  line-height: 1.25;
+  color: #173526;
 }
 
-.messageContainer p {
-    text-transform: uppercase;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 17px;
-    text-align: center;
+.divider {
+  width: 50px;
+  height: 2px;
+  margin: 24px auto;
+  background: #c9a84c;
 }
 
-.gold {
-    color: var(--standard-gold);
+.welcomeCard h2 {
+  margin: 0;
+  font-size: 30px;
+  line-height: 1.2;
+  color: #1f5c42;
 }
 
-.contentTitle{
-    text-align: center;
-    font-weight: normal;
-    font-size: 42px;
-    line-height: 50px;
-    margin-bottom: 16px;
+.subtitle {
+  margin: 10px 0 32px;
+  color: #6b756f;
+  font-size: 15px;
 }
 
-.newArrivalsContainer {
-    margin-top: 64px;
+.loginButton {
+  width: 100%;
+  min-height: 54px;
+  border: 0;
+  border-radius: 12px;
+  background: #1f5c42;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
-.highlightContainer {
-    margin: 88px 0px;
+.loginButton:hover {
+  opacity: 0.92;
 }
 
-.linkContainers {
-    display: flex;
-    position: absolute;
-    transform: translate(-50%, 0%);
-    bottom: 64px;
-    left: 50%;
-    gap: 72px;
+.loginButton:active {
+  transform: scale(0.98);
 }
 
-.ctaCustomButton {
-    margin-top: 50px;
+.footerText {
+  margin: 28px 0 0;
+  font-size: 12px;
+  color: #8a938d;
 }
 
-.linkContainers a {
-    color: var(--standard-white);
-    border-bottom: 1px solid var(--standard-white);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 17px;
-    text-transform: uppercase;
-    transition: all 0.3s ease-in-out;
+@media (max-width: 480px) {
+  .welcomePage {
+    min-height: 100vh;
+    padding: 20px 16px;
+  }
+
+  .welcomeCard {
+    padding: 40px 22px 30px;
+    border-radius: 20px;
+  }
+
+  .welcomeCard h1 {
+    font-size: 24px;
+  }
+
+  .welcomeCard h2 {
+    font-size: 27px;
+  }
 }
-
-.linkContainers a:hover {
-    color: var(--standard-gold);
-    border-bottom: 1px solid var(--standard-gold);
-}
-
-.blogsContainer {
-    margin-top: 96px;
-}
-
-.sustainableContainer {
-    margin: 96px 40px 0px 40px;
-}
-
-.socialContainer {
-    margin-top: 64px;
-}
-
-.socialContentGrid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-}
-
-.socialContentGrid img {
-    width: 100%;
-    object-fit: cover;
-}
-
-@media (max-width: 800px) {
-    .sustainableContainer {
-        margin: 96px 0px 0px 0px;
-    }
-
-    .socialContentGrid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .highlightContainer {
-        margin: 88px 0px 40px 0px;
-    }
-}
+```
